@@ -1,0 +1,17 @@
+Author: John Dobrota
+Huge thanks to Ian Duncan and his article at medium for the guide on creating a RESTful API with GOlang
+
+
+Purpose:
+A REST API written in Go lang. The purpose of this project was partly,to learn how to 
+write a REST API in Go and to get more familiar with the language itself. However, and perhaps more importantly,
+it was a fantastic opportunity to learn more about the awesome services AWS has to offer and how to containerize my application.
+
+Through the AWS CLI, I sucessfully created a ECS clustor, attached the appriopate security group to it, created a Docker Image locally, pushed it ECR, 
+started the container by running a copy of the task definition through a ECS service, and lastly, created a ELB whose configured security group will direct
+all outside traffic to all container instances part of a specified target group.
+
+Future Plan:
+Use Terraform to automate the deployments of the Go application to the ECS clustors, completely eliminating the need to deploy it manually
+through the AWS CLI.  
+

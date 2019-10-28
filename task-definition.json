@@ -1,0 +1,21 @@
+{
+    "family": "go-restapi-service",
+    "containerDefinitions": [
+        {
+            "name": "go-restapi-service",
+            "image": "948016976007.dkr.ecr.us-east-2.amazonaws.com/gorestapi:latest",
+            "cpu": 128,
+            "memoryReservation": 128,
+            "portMappings": [
+                {
+                    "containerPort": 3000,
+                    "protocol": "tcp"
+                }
+            ],
+            "command": [
+                "./main"
+            ],
+            "essential": true
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "cluster": "go-restapi-clustor",
+    "serviceName": "go-restapi-service",
+    "taskDefinition": "go-restapi-service",
+    "loadBalancers": [
+        {
+            "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-2:948016976007:targetgroup/go-restapi-tg/e902bbdf81bfe697",
+            "containerName": "go-restapi-service",
+            "containerPort": 3000
+        }
+    ],
+    "desiredCount": 1
+   
+}
